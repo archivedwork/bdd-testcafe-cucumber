@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "bdd-testcafe-cucumber",
+  "version": "1.0.0",
+  "description": "BDD automation tests",
+  "scripts": {
+    "test": ""
+  },
+  "dependencies": {
+    "cucumber": "6.0.5",
+    "testcafe": "1.8.2"
+  }
+}
