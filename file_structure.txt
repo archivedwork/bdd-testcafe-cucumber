@@ -1,0 +1,23 @@
+BDD-TestCafe-Cucumber File Structure
+====================================
+
+|
+| --- features
+        | --- google.feature
+|
+| --- step_definitions
+        | --- google.ts
+|
+| --- models
+        | --- search-bar.model.ts
+|
+| --- utils
+        | --- support
+                | --- hooks.ts
+                | --- test-controller-config.ts
+                | --- test-controller-holder.ts
+                | --- test-controller-listener.ts
+                | --- world.ts
+        |
+        | --- index.ts
+        | --- selector-factory.ts
