@@ -2,12 +2,30 @@
   "private": true,
   "name": "bdd-testcafe-cucumber",
   "version": "1.0.0",
-  "description": "BDD automation tests",
+  "description": "BDD automation test, Integration of TestCafé, Cucumberjs and TypeScript",
+  "author": "JAMAL MOHAMAD",
+  "license": "MIT",
   "scripts": {
-    "test": ""
+    "test": "TS_NODE_PROJECT='./tsconfig.json' ./node_modules/cucumber/bin/cucumber-js src/features --require-module ts-node/register --require 'src/**/*.ts' -f json:./reports/cucumber_report.json"
   },
   "dependencies": {
+    "base64-img": "1.0.4",
+    "chai": "4.2.0",
+    "chai-string": "1.5.0",
     "cucumber": "6.0.5",
-    "testcafe": "1.8.2"
+    "cucumber-html-reporter": "5.1.0",
+    "cucumber-junit": "1.7.1",
+    "cucumber-junit-convert": "1.1.0",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.8",
+    "prettier": "1.19.1",
+    "screenshot-desktop": "1.11.0",
+    "testcafe": "1.8.2",
+    "testcafe-reporter-html": "1.4.6",
+    "ts-node": "8.6.2",
+    "tslint": "6.0.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-standard": "9.0.0",
+    "typescript": "3.8.3"
   }
 }
