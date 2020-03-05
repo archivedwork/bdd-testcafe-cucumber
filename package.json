@@ -2,9 +2,11 @@
   "private": true,
   "name": "bdd-testcafe-cucumber",
   "version": "1.0.0",
-  "description": "BDD automation tests",
+  "description": "BDD automation test, Integration of TestCafé, Cucumberjs and TypeScript",
+  "author": "JAMAL MOHAMAD",
+  "license": "MIT",
   "scripts": {
-    "test": ""
+    "test": "TS_NODE_PROJECT='./tsconfig.json' ./node_modules/cucumber/bin/cucumber-js src/features --require-module ts-node/register --require 'src/**/*.ts' -f json:./reports/cucumber_report.json"
   },
   "dependencies": {
     "base64-img": "1.0.4",
