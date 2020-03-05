@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "outDir": "./lib",
+    "declaration": true,
+    "declarationDir": "./lib",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "noResolve": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "types": [
+      "cucumber",
+      "node",
+      "testcafe",
+      "chai-string"
+    ],
+    "lib": ["dom", "es2017"]
+  }//,
+  //"exclude": [
+  //"node_modules"
+  //]
+}
