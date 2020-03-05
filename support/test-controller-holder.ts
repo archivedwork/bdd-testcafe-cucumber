@@ -34,13 +34,31 @@ class TestControllerHolderImp implements TestControllerHolder {
         return new Promise((resolve) => (TestControllerHolderImp.captureResolver = resolve));
     }
 
+    register(testControllerListener: TestControllerListener): void {
+        if(testControllerListener && TestControllerHolderImp.testControllerListener){
+            TestControllerHolderImp.testControllerListener.push(testControllerListener);
+        }
+    }
+
     destroy(): void {
+        TestControllerHolderImp.testController = undefined;
+
+        if(TestControllerHolderImp.captureResolver){
+            TestControllerHolderImp.captureResolver();
+        }
     }
 
     get(): Promise<TestController> {
-        return undefined;
-    }
-
-    register(listener: TestControllerListener): void {
+        return new Promise((resolve) => {
+            if(TestControllerHolderImp.testController){
+                // already captured
+                resolve(TestControllerHolderImp.testController);
+            } else {
+                // resolve (later) when captured
+                TestControllerHolderImp.getResolver = resolve;
+            }
+        })
     }
 }
+
+export const testControllerHolder: TestControllerHolder = TestControllerHolderImp.getInstance();
