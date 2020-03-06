@@ -1,4 +1,4 @@
-import { TestControllerListener } from '../support/test-controller-listener';
+import { TestControllerListener } from './test-controller-listener';
 
 /**
  * Configures the TestController

@@ -6,7 +6,7 @@
   "author": "JAMAL MOHAMAD",
   "license": "MIT",
   "scripts": {
-    "test": "TS_NODE_PROJECT='./tsconfig.json' ./node_modules/cucumber/bin/cucumber-js src/features --require-module ts-node/register --require 'src/**/*.ts' -f json:./reports/cucumber_report.json"
+    "test": "./node_modules/cucumber/bin/cucumber-js src/features --require-module ts-node/register --require 'src/**/*.ts' -f json:./reports/cucumber_report.json"
   },
   "dependencies": {
     "base64-img": "1.0.4",
