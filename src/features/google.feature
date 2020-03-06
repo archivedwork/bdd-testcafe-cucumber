@@ -4,6 +4,6 @@ Feature: Searching for TestCafe by Google
 
   Scenario: Searching for TestCafe by Google
     Given I am open Google's search page
-    When I am typing my search request "github TestCafe js" on Google
+    When I am typing my search request "TestCafe" on Google
     Then I am pressing "enter" key on Google
-    Then I should  see that the first Google's result is "DevExpress/testcafe: A Node.js tool to automate end"
+    Then I should see that the first Google's result is "A node.js tool to automate end-to-end web testing | TestCafe"

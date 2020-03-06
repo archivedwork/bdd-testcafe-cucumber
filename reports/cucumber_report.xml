@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Searching for TestCafe by Google" time="24.255" tests="1" failures="0" errors="0" skipped="0">
+    <testcase name="Searching for TestCafe by Google" classname="searching-for-testcafe-by-google;searching-for-testcafe-by-google" time="24.255"/>
+  </testsuite>
+</testsuites>
