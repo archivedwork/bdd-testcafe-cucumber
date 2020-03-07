@@ -20,3 +20,5 @@ node_modules
 /bdd-testcafe-cucumber.iml
 /package-lock.json
 /nbproject/private/
+
+package-lock.json
